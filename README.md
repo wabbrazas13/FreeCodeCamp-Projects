@@ -8,6 +8,11 @@ Welcome to my freeCodeCamp Projects Repository! This repository contains a colle
 - **Project 1: Registration Form**
   - Description: A simple registration form with input validation and responsive design.
   - Technologies: HTML, CSS
+
+- **Project 2: Survey Form**
+  - Description: A simple programmer survey form.
+  - Technologies: HTML, CSS
+    
 ...
 
 ## freeCodeCamp Curriculum
