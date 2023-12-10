@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Programmer Survey Form</h1>
+    <p id="description">Thank you for participating in this survey, designed to gather insights into the preferences and experiences of programmers.</p>
+    <div class="container">   
+        <form id="survey-form" action="">
+            <fieldset>
+                <label id="name-label" class="spacing-bottom" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                <label id="email-label" class="spacing-top spacing-bottom" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                <label id="number-label" class="spacing-top spacing-bottom" for="number">Age (Optional)</label>
+                <input type="number" name="number" id="number" class="form-control" min="13" max="120" placeholder="Enter your age">
+                <label class="spacing-top spacing-bottom" for="years">How many years of experience do you have as a programmer?</label>
+                <select name="years" id="dropdown" class="form-control">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="1">0 to 1 year</option>
+                    <option value="2">1 to 3 years</option>
+                    <option value="3">3 to 5 years</option>                   
+                    <option value="4">5 years and above</option>
+                </select>
+            </fieldset>
+            <fieldset class="spacing-top">
+                <legend>How would you describe your attitude towards programming?</legend>
+                <label class="spacing-bottom" for="love-it"><input type="radio" name="programming-attitude" id="love-it" value="1" checked> Love it!</label>
+                <label class="spacing-bottom" for="its-okay"><input type="radio" name="programming-attitude" id="its-okay" value="2"> It's okay.</label>          
+                <label class="spacing-bottom" for="not-a-fan"><input type="radio" name="programming-attitude" id="not-a-fan" value="3"> Not a fan.</label>
+            </fieldset>
+            <fieldset>
+                <label class="spacing-top spacing-bottom" for="learning-motivation">What is your motivation for learning programming?</label>
+                <select id="learning-motivation" name="learning-motivation" class="form-control">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="career">Career advancement</option>
+                    <option value="interest">Personal interest</option>
+                    <option value="hobby">Hobby</option>
+                    <option value="academic">Academic requirements</option>
+                    <option value="other">Others</option>
+                </select>
+            </fieldset>
+            <fieldset class="spacing-top">
+                <legend>Which programming languages do you currently know or would like to explore in the future?</legend>
+                <label class="spacing-bottom" for="javascript"><input type="checkbox" name="programming-languages" id="javascript" value="JavaScript"> JavaScript</label>
+                <label class="spacing-bottom" for="python"><input type="checkbox" name="programming-languages" id="python" value="Python"> Python</label>
+                <label class="spacing-bottom" for="java"><input type="checkbox" name="programming-languages" id="java" value="Java"> Java</label>
+                <label class="spacing-bottom" for="csharp"><input type="checkbox" name="programming-languages" id="csharp" value="C#"> C#</label>
+                <label class="spacing-bottom" for="cpp"><input type="checkbox" name="programming-languages" id="cpp" value="C++"> C++</label>
+                <label class="spacing-bottom" for="typescript"><input type="checkbox" name="programming-languages" id="typescript" value="TypeScript"> TypeScript</label>
+                <label class="spacing-bottom" for="php"><input type="checkbox" name="programming-languages" id="php" value="PHP"> PHP</label>
+                <label class="spacing-bottom" for="swift"><input type="checkbox" name="programming-languages" id="swift" value="Swift"> Swift</label>
+                <label class="spacing-bottom" for="sql"><input type="checkbox" name="programming-languages" id="sql" value="SQL"> SQL</label>
+                <label class="spacing-bottom" for="ruby"><input type="checkbox" name="programming-languages" id="ruby" value="Ruby"> Ruby</label>
+            </fieldset>
+            <fieldset>
+                <label class="spacing-top spacing-bottom" for="comments">Any comments or suggestions?</label>
+                <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
+            </fieldset>
+            <div class="button">
+                <input type="submit" name="" id="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
